@@ -17,7 +17,28 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "expense": {
+      "type": "belongsTo",
+      "model": "Expense",
+      "foreignKey": ""
+    },
+    "income": {
+      "type": "belongsTo",
+      "model": "Income",
+      "foreignKey": ""
+    },
+    "expenses": {
+      "type": "hasMany",
+      "model": "Expense",
+      "foreignKey": ""
+    },
+    "incomes": {
+      "type": "hasMany",
+      "model": "Income",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
