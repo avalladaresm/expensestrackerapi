@@ -34,7 +34,7 @@
   "validations": [],
   "relations": {
     "category": {
-      "type": "hasOne",
+      "type": "belongsTo",
       "model": "Category",
       "foreignKey": ""
     }
