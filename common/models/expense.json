@@ -1,44 +1,52 @@
 {
-  "name": "Expense",
-  "plural": "Expenses",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "id": {
-      "type": "number",
-      "required": true
-    },
-    "amount": {
-      "type": "number"
-    },
-    "description": {
-      "type": "string"
-    },
-    "place": {
-      "type": "string"
-    },
-    "payment_type": {
-      "type": "string"
-    },
-    "datetime": {
-      "type": "date",
-      "required": true
-    },
-    "warranty": {
-      "type": "number"
-    }
-  },
-  "validations": [],
-  "relations": {
-    "category": {
-      "type": "belongsTo",
-      "model": "Category",
-      "foreignKey": ""
-    }
-  },
-  "acls": [],
-  "methods": {}
+	"name": "Expense",
+	"plural": "Expenses",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"id": {
+			"type": "number",
+			"required": true
+		},
+		"description": {
+			"type": "string"
+		},
+		"amount": {
+			"type": "number"
+		},
+		"place": {
+			"type": "string"
+		},
+		"paymentType": {
+			"type": "string"
+		},
+		"dateTime": {
+			"type": "date",
+			"required": true
+		},
+		"warranty": {
+			"type": "number"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"category": {
+			"type": "belongsTo",
+			"model": "Category",
+			"foreignKey": ""
+		}
+	},
+	"acls": [
+		{
+			"accessType": "EXECUTE",
+			"principalType": "ROLE",
+			"principalId": "$everyone",
+			"permission": "ALLOW",
+			"property": "getExpenseCategory"
+		}
+	],
+	"methods": {}
 }
