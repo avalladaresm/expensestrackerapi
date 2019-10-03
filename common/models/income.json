@@ -1,0 +1,42 @@
+{
+  "name": "Income",
+  "plural": "Incomes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "payment_type": {
+      "type": "string"
+    },
+    "datetime": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
