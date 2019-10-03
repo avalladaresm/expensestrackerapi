@@ -5,12 +5,12 @@
   },
   "expensestrackerdb": {
     "host": "expensestrackerdb.cxkn23rfwm0u.us-east-2.rds.amazonaws.com",
-    "port": 5432,
+    "port": 1433,
     "url": "",
     "database": "expensestrackerdb",
     "password": "exp3nsestr4cker",
     "name": "expensestrackerdb",
-    "user": "postgres",
-    "connector": "postgresql"
+    "user": "admin",
+    "connector": "mssql"
   }
 }
