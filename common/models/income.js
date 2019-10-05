@@ -11,7 +11,7 @@ module.exports = function(Income) {
 
 	Income.remoteMethod('getIncomeCategory', {
 		accepts: { arg: '_id', type: 'number' },
-		returns: { root: true, type: 'object' },
-		http: { path: '/getIncomeCategory', verb: 'get' }
+		returns: { root: true, type: 'string' },
+		http: { path: '/:_id/getIncomeCategory', verb: 'get' }
 	});
 };

@@ -11,7 +11,7 @@ module.exports = function(Expense) {
 
 	Expense.remoteMethod('getExpenseCategory', {
 		accepts: { arg: '_id', type: 'number' },
-		returns: { root: true, type: 'object' },
-		http: { path: '/getExpenseCategory', verb: 'get' }
+		returns: { root: true },
+		http: { path: '/:_id/getExpenseCategory', verb: 'get' }
 	});
 };
