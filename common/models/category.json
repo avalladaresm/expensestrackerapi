@@ -1,34 +1,34 @@
 {
-  "name": "Category",
-  "plural": "Categories",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "id": {
-      "type": "number",
-      "required": true
-    },
-    "name": {
-      "type": "string",
-      "required": true
-    }
-  },
-  "validations": [],
-  "relations": {
-    "expenses": {
-      "type": "hasMany",
-      "model": "Expense",
-      "foreignKey": ""
-    },
-    "incomes": {
-      "type": "hasMany",
-      "model": "Income",
-      "foreignKey": ""
-    }
-  },
-  "acls": [],
-  "methods": {}
+	"name": "Category",
+	"plural": "Categories",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"id": {
+			"type": "number",
+			"required": true
+		},
+		"name": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"validations": [],
+	"relations": {
+		"expenses": {
+			"type": "hasMany",
+			"model": "Expense",
+			"foreignKey": ""
+		},
+		"incomes": {
+			"type": "hasMany",
+			"model": "Income",
+			"foreignKey": ""
+		}
+	},
+	"acls": [],
+	"methods": {}
 }
