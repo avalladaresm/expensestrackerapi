@@ -42,5 +42,9 @@
   "Income": {
     "dataSource": "expensestrackerdb",
     "public": true
+  },
+  "Dashboard": {
+    "dataSource": "expensestrackerdb",
+    "public": true
   }
 }
