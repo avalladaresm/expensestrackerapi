@@ -23,29 +23,29 @@
 		"paymentType": {
 			"type": "string"
 		},
+		"category": {
+			"type": "string"
+		},
+		"warranty": {
+			"type": "number"
+		},
 		"dateTime": {
 			"type": "date",
 			"required": true
 		},
-		"warranty": {
-			"type": "number"
+		"createdAt": {
+			"type": "date",
+			"required": true
 		}
 	},
 	"validations": [],
-	"relations": {
-		"category": {
-			"type": "belongsTo",
-			"model": "Category",
-			"foreignKey": ""
-		}
-	},
+	"relations": {},
 	"acls": [
 		{
 			"accessType": "EXECUTE",
 			"principalType": "ROLE",
 			"principalId": "$everyone",
-			"permission": "ALLOW",
-			"property": "getExpenseCategory"
+			"permission": "ALLOW"
 		}
 	],
 	"methods": {}

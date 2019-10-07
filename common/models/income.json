@@ -24,26 +24,26 @@
 		"paymentType": {
 			"type": "string"
 		},
+		"category": {
+			"type": "string"
+		},
 		"dateTime": {
+			"type": "date",
+			"required": true
+		},
+		"createdAt": {
 			"type": "date",
 			"required": true
 		}
 	},
 	"validations": [],
-	"relations": {
-		"category": {
-			"type": "belongsTo",
-			"model": "Category",
-			"foreignKey": ""
-		}
-	},
+	"relations": {},
 	"acls": [
 		{
 			"accessType": "EXECUTE",
 			"principalType": "ROLE",
 			"principalId": "$everyone",
-			"permission": "ALLOW",
-			"property": "getIncomeCategory"
+			"permission": "ALLOW"
 		}
 	],
 	"methods": {}

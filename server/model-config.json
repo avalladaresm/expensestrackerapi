@@ -35,15 +35,15 @@
     "dataSource": "db",
     "public": false
   },
-  "Category": {
-    "dataSource": "expensestrackerdb",
-    "public": true
-  },
   "Expense": {
     "dataSource": "expensestrackerdb",
     "public": true
   },
   "Income": {
+    "dataSource": "expensestrackerdb",
+    "public": true
+  },
+  "Dashboard": {
     "dataSource": "expensestrackerdb",
     "public": true
   }
